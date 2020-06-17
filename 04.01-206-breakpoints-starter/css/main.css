@@ -1,0 +1,20 @@
+
+  /* ----------- Base Styles ----------- */
+  
+  body {
+    background: #ebd8d0;
+  }
+
+/* ----------- Tablets larger than 768px wide ----------- */
+@media (min-width:768px) {
+	body {
+    background: #210310;
+  }
+}
+
+/* ----------- Monitors larger than 1200px wide ----------- */
+@media (min-width:1200px) {
+  body {
+    background: #7c3238;
+  }
+}

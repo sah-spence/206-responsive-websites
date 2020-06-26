@@ -1,0 +1,237 @@
+/******** BASE STYLES *******/
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+/******** *******/
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+	font-size: 1.125em;
+}
+h4 {
+	font-size: 0.75em;
+}
+
+p {
+	font-size: 0.75em;
+	line-height: 21px;
+    padding: 0 30px;
+}
+
+/******** HEADER *******/
+/*The widths are in a percentage!*/
+header {
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+header h1 {
+	margin: 0;
+	padding: 30px 0;
+	border-bottom: 3px solid #77a466;
+}
+
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 30px 0;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+header nav ul li {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 10px;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/******** MAIN CONTENT *******/
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.main-image {
+	height: auto;
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+}
+.main-title h3 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	height: auto;
+	border-top: 1px solid #eee;
+}
+
+.section-one h4 {
+	padding: 10px 0;
+}
+
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.section-two h4,
+.section-three h4 {
+	padding: 10px 30px;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/******** FOOTER *******/
+/*The widths are in a percentage!*/
+footer {
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 14px;
+}
+
+/******** MEDIA QUERIES*******/
+
+@media (min-width:768px) {
+	header {
+		flex-flow: column;
+		border-bottom: 3px solid #77a466;
+		width: 100%;
+	}
+	header h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-bottom: 3px solid #77a466;
+		width: 100%;
+	}
+	.bottom-section {
+		align-items: flex-start;
+	}
+	.section-one,
+	.section-two,
+	.section-three 	{
+		width: 33%;
+	}
+	footer {
+		width: 100%;
+	}
+}
+
+@media (min-width:1200px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	header h1 {
+		border-bottom: none;
+	}
+	header nav ul li {
+		display: inline;
+	}
+	.bottom-section {
+		align-items: flex-start;
+	}
+	.section-one,
+	.section-two,
+	.section-three 	{
+		width: 33%;
+	}
+	footer {
+		width: 100%;
+	}
+}
